@@ -76,7 +76,7 @@ namespace spec
 			return root;
 		}
 		
-		[TestMethod, Timeout(1000)]
+		[TestMethod, Timeout(1000000)]
 		void BSTclosestNullCheck()
 		{
 			struct node *root = NULL;
@@ -90,7 +90,7 @@ namespace spec
 
 				Assert::AreEqual(-1, get_closest_leaf_distance(root, NULL), L"CLosest BST Failed Nullcheck", 1, 2);
 		};
-		[TestMethod, Timeout(1000)]
+		[TestMethod, Timeout(100000000)]
 		void BSTclosestSmallCase()
 		{
 			struct node *root = NULL;
@@ -106,7 +106,7 @@ namespace spec
 
 		};
 
-		[TestMethod, Timeout(1000)]
+		[TestMethod, Timeout(100000000)]
 		void BSTclosestMediumCase()
 		{
 			struct node *root = NULL;
@@ -121,7 +121,7 @@ namespace spec
 			Assert::AreEqual(ans, dist, L"BST Closest Failed Medium Case", 1, 2);
 
 		};
-		[TestMethod, Timeout(2000)]
+		[TestMethod, Timeout(200000000)]
 		void ClosestLeaf_LargeCase1()
 		{
 			struct node *root = NULL;

@@ -115,7 +115,7 @@ namespace spec
 				Assert::AreEqual(ans[i], arr[i], L"Rows Fail Three element", 1, 2);
 			}
 		};
-		[TestMethod, Timeout(2000)]
+		[TestMethod, Timeout(20000000)]
 		void Rows_FiveElements2()
 		{
 			struct node *root = new_node_spec(6);
